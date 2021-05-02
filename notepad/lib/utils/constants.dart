@@ -37,7 +37,7 @@ var noNotesStyle = GoogleFonts.roboto(
 var boldPlus = GoogleFonts.roboto(
   textStyle: TextStyle(
     fontSize: 30.0,
-    color: Colors.blueAccent,
+    color: popup,
     fontWeight: FontWeight.bold,
   ),
 );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notepad/utils/constants.dart';
-import '../helper/note_provider.dart';
+import 'package:notepad/helper/note_provider.dart';
 import 'package:notepad/helper/models/note.dart';
 import 'package:provider/provider.dart';
 
@@ -22,18 +22,18 @@ class DeletePopUp extends StatelessWidget {
       content:
           Text('¿Realmente deseas eliminar esta nota?', style: deleteContent),
       actions: [
-        TextButton(
+        FlatButton(
           child: Text(
             'Sí',
             style: deleteOptions,
           ),
           onPressed: () {
-            Provider.of<NoteProvider>(context, listen: false)
+            var wish = Provider.of<NoteProvider>(context, listen: false)
                 .deleteNote(selectedNote.id);
-            Navigator.popUntil(context, ModalRoute.withName('/'));
+            Navigator.popUntil(context, ModalRoute.withName('/home'));
           },
         ),
-        TextButton(
+        FlatButton(
           child: Text(
             'No',
             style: deleteOptions,

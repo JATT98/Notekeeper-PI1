@@ -9,7 +9,7 @@ import 'package:provider/provider.dart';
 import 'package:notepad/screens/edit_screen.dart';
 
 class NoteViewScreen extends StatefulWidget {
-  static const route = 'note-view';
+  static const route = '/note-view';
   @override
   _NoteViewScreenState createState() => _NoteViewScreenState();
 }

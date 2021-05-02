@@ -120,7 +120,16 @@ class NoteListScreen extends StatelessWidget {
                   text: TextSpan(
                     style: noNotesStyle,
                     children: [
-                      TextSpan(text: 'Aun no hay ninguna nota escrita\nVe a "'),
+                      TextSpan(
+                        text: 'Aun no hay ninguna nota escrita\nVe a "',
+                        style: TextStyle(
+                          letterSpacing: 1.0,
+                          color: white,
+                          fontSize: 20.0,
+                          height: 1.5,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
                       TextSpan(
                           text: '+',
                           style: boldPlus,
@@ -128,7 +137,16 @@ class NoteListScreen extends StatelessWidget {
                             ..onTap = () {
                               goTonoteEditScreen(context);
                             }),
-                      TextSpan(text: '" para agregar una'),
+                      TextSpan(
+                        text: '" para agregar una',
+                        style: TextStyle(
+                          letterSpacing: 1.0,
+                          color: white,
+                          fontSize: 20.0,
+                          height: 1.5,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
                     ],
                   ),
                 )
